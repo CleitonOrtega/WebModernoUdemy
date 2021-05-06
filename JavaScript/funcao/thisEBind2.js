@@ -1,0 +1,14 @@
+/*
+ *Aula sobre this e bind 2 no JS
+ */
+function Pessoa(){
+    this.idade = 0
+    
+    const self = this
+    setInterval(function(){
+        self.idade++
+        console.log(self.idade)
+    }/*.bind(self)*/, 1000)
+}
+
+new Pessoa
